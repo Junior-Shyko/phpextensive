@@ -1,35 +1,36 @@
-# docker-php
+# PHPEXTENSIVE
 
-  ## Fornece o valor por extenso do número fornecido.
+### Instalação
 
-  	## ESTILOS ACEITOS:
+    composer require juniorshyko/phpextensive
 
-  	Estilo					Exemplo		Saída
-  	-----------------------------------------------------
-  	MOEDA					1001		mil e um reais
-  	NUMERO_MASCULINO		1001		mil e um
-  	NUMERO_FEMININO			1001		mil e uma
-  	-----------------------------------------------------
 
-  	EXEMPLOS DE USO:
+### 💡 - Instalação
 
-  	$e = new \phputil\extenso\Extenso();
+```php
+    require  __DIR__.'/vendor/autoload.php';
+    
+    use JuniorShyko\Phpextensive\Extensive;
+```
 
-  	$e->extenso( 1001 ); // mil e um reais
-  	$e->extenso( 1001, Extenso::MOEDA ); // mil e um reais
-  	$e->extenso( 1001, Extenso::NUMERO_MASCULINO ); // mil e um
- 		$e->extenso( 1001, Extenso::NUMERO_FEMININO ); // mil e uma
+### 📢  - Como usar
+```php
+    $e = new  Extensive();
+    echo  $e->extensive( 1001 ); // mil e um reais
+    echo  $e->extensive( 1001, Extensive::COIN ); // mil e um reais
+    echo  $e->extensive( 54001.99, Extensive::MALE_NUMBER ); // cinquenta e quatro mil e um e noventa e nove centésimos
+    echo  $e->extensive( 185001.084 ); // cento e oitenta e cinco mil e um reais e oitenta e quatro milésimos
+    echo  $e->extensive( 4001.17, Extensive::MALE_NUMBER ); // quatro mil e um e dezessete centésimos
+```
 
-  	$e->extenso( 1001.01 ); // mil e um reais e um centavo
-  	$e->extenso( 1001.001 ); // mil e um reais e um milésimo
+## 👤 Autor
+Junior Oliveira : https://github.com/Junior-Shyko (Github:  @Junior-Shyko)
 
-  	### quatro milhões vinte e cinco mil oitocentos reais e noventa e nove centavos
-		$e->extenso( 4025800.99 );
+## 👤 Contribuição
 
-###  	OBSERVAÇÕES:
-  		- Suporta números até a casa dos vigesilhões.
-        - 	 Suporta casas decimais até vigesilões.
- 
- 
-   @author	Thiago Delgado Pinto
- 
+ - Contribuição sempre é bem vinda.
+ - Tarefa principal é a tradução baseada em *transaction laravel*
+
+
+#### Baseado em um projeto existente
+Link: [@thiagodp](https://github.com/thiagodp/extenso)
