@@ -1,8 +1,20 @@
 {
-    "require": {
-        "nesbot/carbon": "^2.57.0"
+    "name": "juniorshyko/phpextensive",
+    "description": "Pacote que converte numero em string por extenso",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "JuniorShyko\\Phpextensive\\": "src/"
+        }
     },
-    "require-dev": {
-        "symfony/var-dumper": "^5.4"
+    "authors": [
+        {
+            "name": "Junior-Shyko",
+            "email": "franciscaoanto@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=8.0"
     }
 }
