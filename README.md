@@ -30,7 +30,10 @@ Junior Oliveira : https://github.com/Junior-Shyko (Github:  @Junior-Shyko)
 
  - Contribuição sempre é bem vinda.
  - Tarefa principal é a tradução baseada em *transaction laravel*
+ - 
+## Licença
 
+LGPL © [Junior Oliveira](https://github.com/Junior-Shyko)
 
 #### Baseado em um projeto existente
 Link: [@thiagodp](https://github.com/thiagodp/extenso)
